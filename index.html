@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>KCT - безлимитный интернет + цифровое ТВ</title>
+
+
+    <meta charset="utf-8">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!--[if lt IE 9]>
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+        }
+    </script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css.map">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css.map">
+
+    <link rel="stylesheet" href="css/creative.css">
+    <link rel="stylesheet" href="css/creative.css.map">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link href="css/jquery-ui.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="favicon.gif" type="image/gif">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+
+
+<script>
+
+</script>
+
+</head>
+
+
+<body>
+<!-- wrapper for clouds / background -->
+<div class="vh__wrapper" id="vh_wrapper">
+
+</div>
+<!-- EOF -->
+
+
+<header class="b__header">
+    <div class="container">
+           <div class="row">
+               <div class="col-xs-6 text-left">
+                    <div class="b__header_img-wrapper">
+                        <a href="#"><img id="test" src="img/logo.png" alt="logo"></a>
+                    </div>
+               </div>
+
+               <div class="col-xs-6 text-right">
+                    <div class="b__header_p-wrapper">
+                        <p class="b__header_p">
+                            +7 (978) 900 14 00<br />
+                            (0652) 56 11 11
+                        </p>
+                    </div>
+               </div>
+           </div>
+       </div>   
+</header>
+
+
+<main class="b__main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="row">
+
+                    <div class="col-xs-12">
+                        <div class="b__main_p-wrapper">
+                            <p class="b__main_p-uppercase text-center" style="font-weight: bold; margin-bottom: 25px;">
+                                Плати сколько хочешь!
+                            </p>
+                            <p class="b__main_p text-center">
+                                Безлимитный интернет плюс цифровое ТВ<br />100 мегабит + 250 каналов + выделенный IP-адрес
+                            </p>
+                            <p class="b__main_p-uppercase text-center">
+                                от 0 рублей в месяц
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                        
+                    </div>
+
+
+                    <div class="col-xs-12">              
+                        <div class="b__main_form transition">
+                            <div class="b__main_form_p-wrapper">
+                                <p class="b__main_form_p text-center">
+                                    Хотите узнать больше?<br/>
+                                    Оставьте свой номер<br/>
+                                    <span style="text-transform: none;">Мы свяжемся с Вами и всё расскажем</span>
+                                </p>
+                                <form action="post_contacts.php" method= "POST" class="b__form">
+                                    <input name="phone" type="text" class="b__form_number" placeholder="+ 7 " />
+                                    <input type="submit" class="b__form_submit transition" value="УЗНАТЬ БОЛЬШЕ" />
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                <div class="row" style="display: flex;">
+
+                    <div class="col-lg-5"> 
+                        <img src="img/rocket.png" alt="" class="rocket" id="rocket" onClick="mainClick()">                        
+                    </div>
+
+
+
+                    <div class="col-lg-7">
+                        <p style="display: none">
+                            <label for="amount">Volume:</label>
+                            <input type="number" id="amount">
+                        </p>
+
+                        <div id="slider-vertical" style="height:60vh;"></div>
+
+                       <!--  <form class="radio_form">
+                              <p class="radio_p">
+                                    <input class="radio_input" type="radio" id="cbox0" value="0" name="e2" />
+                                    <label for="cbox0">0</label>
+                              </p>
+                              <p class="radio_p">
+                                    <input class="radio_input" type="radio" id="cbox99" value="99" name="e2" />
+                                    <label for="cbox99">99</label>
+                              </p>
+                              <p class="radio_p">
+                                    <input class="radio_input" type="radio" id="cbox199" value="199" name="e2" />
+                                    <label for="cbox199">199</label>
+                              </p>
+                              <p class="radio_p">
+                                    <input class="radio_input" type="radio" id="cbox399" value="399" name="e2" />
+                                    <label for="cbox399">399</label>
+                              </p>
+                              <p class="radio_p">
+                                    <input class="radio_input" type="radio" id="cbox599" value="599" name="e2" checked />
+                                    <label for="cbox2599">599</label>
+                              </p>
+                              
+                              <div class="bar">
+                                    <div class="bar__value">
+                                    </div>
+                              </div>
+                        </form>
+ -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer class="b__footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <p class="b__footer_p-description">
+                    КСТ (ООО «Крымспецсвязь») — крымский интернет-провайдер. Работаем с 2006 года. Подключаем безлимитный интернет и цифровое телевидение. Ежедневно обслуживаем 15 000 абонентов. Зона покрытия: Симферополь, Мирное, Грэсовский, Аэрофлотский, Комсомольское, Каменка, Бахчисарай, Новопавловка, Почтовое, Скалистое, Трудолюбовка, Прохладное. Подключайтесь!
+                </p>
+                <p class="b__footer_p-description">
+                    #интернетнаш
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                <p class="b__footer_p">
+                    <a href="http://kct.me/static/media/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80.pdf"  target="_blank" class="b__footer_a">
+                        Политика конфиденциальности
+                    </a>
+                </p>
+                <p class="b__footer_p">Официальный сайт
+                    <a href="http://kct.me/"  target="_blank" class="b__footer_a">
+                        kct.me
+                    </a>
+                </p>
+                <p class="b__footer_p">Разработано в 
+                    <a href="https://www.facebook.com/8tag-942471372532956/"  target="_blank" class="b__footer_a">
+                        8tag
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+ <script src="js/creative.js" async></script>
+
+</body>
+
+</html>
